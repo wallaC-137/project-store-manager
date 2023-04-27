@@ -13,6 +13,12 @@ const allProducts = [
   },
 ];
 
+const product =  {
+    id: 3,
+    name: "Escudo do Capitão América",
+  }
+
 module.exports = {
   allProducts,
-}
+  product,
+};
