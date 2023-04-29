@@ -36,7 +36,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2023-04-26T19:10:56.344Z",
-    "modified": "2023-04-28T13:27:58.349Z",
+    "modified": "2023-04-29T11:34:39.981Z",
     "headers": [],
     "params": [],
     "body": {
@@ -65,11 +65,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:3001/products/5",
-    "url": "http://localhost:3001/products/3",
+    "url": "http://localhost:3001/products/32131",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-04-26T22:37:59.393Z",
-    "modified": "2023-04-27T12:03:36.032Z",
+    "modified": "2023-04-29T11:07:57.900Z",
     "headers": [],
     "params": [],
     "tests": []
