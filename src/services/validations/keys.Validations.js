@@ -1,12 +1,12 @@
 const { productsModels } = require('../../models');
 
-// const name = (key) => {
-//   if (key.length < 5) {
-//     return {
-//       message: '"name" length must be at least 5 characters long',
-//     };
-//   }
-// };
+const name = (key) => {
+  if (key.length < 5) {
+    return {
+      message: '"name" length must be at least 5 characters long',
+    };
+  }
+};
 
 const checkInputValue = (newSale) => {
   const isError = !newSale.every((element) => element === null);
@@ -53,7 +53,7 @@ const checkProductExist = async (newSale) => {
 };
 
 module.exports = {
-  // name,
+  name,
   checkKeysExist,
   checkProductExist,
 };
