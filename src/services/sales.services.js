@@ -13,8 +13,8 @@ const findById = async (id) => {
 
   if (checkLength) return { type: 404, message: 'Sale not found' };
 
-  const checkReturn = await keysValidations.checkReturn(result);
-  return { type: null, message: checkReturn };
+  // const checkReturn = await keysValidations.checkReturn(result);
+  return { type: null, message: result };
 };
 
 const insert = async (newSale) => {
