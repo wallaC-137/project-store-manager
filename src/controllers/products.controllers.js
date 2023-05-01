@@ -37,7 +37,16 @@ const update = async (req, res, _next) => {
   if (type) return res.status(type).json({ message });
 
   res.status(200).json(message);
-  // res.status(200).json({ message: 'ok' });
+};
+
+const remove = async (req, res, _next) => {
+  const { id } = req.params;
+  if (!id) return res.status(400).json({ message: '"id" is required' });
+
+  const { type, message } = await productsServices.remove(id);
+  if (type) return res.status(type).json({ message });
+
+  res.status(204).end();
 };
 
 module.exports = {
@@ -45,4 +54,5 @@ module.exports = {
   findById,
   insert,
   update,
+  remove,
 };
