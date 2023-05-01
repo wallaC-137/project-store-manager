@@ -12,6 +12,7 @@ app.get('/', (_request, response) => {
 app.get('/products', productsControllers.findAll);
 app.post('/products', productsControllers.insert);
 app.get('/products/:id', productsControllers.findById);
+app.put('/products/:id', productsControllers.update);
 app.get('/sales', salesControllers.findAll);
 app.get('/sales/:id', salesControllers.findById);
 app.post('/sales', salesControllers.insert);

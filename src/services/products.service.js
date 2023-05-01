@@ -21,8 +21,20 @@ const insert = async (productName) => {
   return { type: null, message: newProduct };
 };
   
+const update = async (productId, productName) => {
+  const checkLength = keysValidations.name(productName);
+  if (checkLength) return { type: 422, message: checkLength.message };
+
+  const checkId = await productsModels.findById(productId);
+  if (!checkId) return { type: 404, message: 'Product not found' };
+  
+  const result = await productsModels.update(productId, productName);
+  return { type: null, message: result };
+};
+
 module.exports = {
   findAll,
   findById,
   insert,
+  update,
 };
