@@ -56,15 +56,9 @@ const checkLength = (result) => {
   if (result.length === 0) return true;
 };
 
-// const checkReturn = (result) => {
-//   if (result.length === 1) return result[0];
-//   return result;
-// };
-
 module.exports = {
   name,
   checkKeysExist,
   checkProductExist,
   checkLength,
-  // checkReturn,
 };
